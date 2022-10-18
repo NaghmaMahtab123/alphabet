@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #d1,#d2,#d3,#d4,#d5,#d6,#d7,#d8,#d9,#d10,#d11,#d12,#d13,#d14,#d15,#d16,#d17,#d18,#d19,#d20,#d21,#d22,#d23,#d24,#d25,#d26{
+            display:none;
+            
+            
+        }
+        #i1{
+            /* position: absolute;
+            /* left:40%; 
+            top:15%; */
+            padding: 0;
+            border-radius: 8px 0;
+            
+        }
+        .input-btn{
+            padding: 15px;
+            background-color: black;
+            border: 4px solid white;
+            color:white;
+            /* position: absolute; */
+            /* left:41%; */
+            /* top:30%; */
+            font-size: 18px;
+        }
+        .input-btn:hover{
+          background-color: white;
+          color: black;
+          border:4px solid black;
+        }
+        
+        #d1,#d3,#d4,#d6,#d5,#d8,#d9,#d11,#d12,#d13,#d14,#d16,#d15,#d17,#d18,#d19,#d20,#d21,#d23,#d25,#d26{
+            width:15%;
+            height: 15vh;
+        }
+       #d2,#d10{
+        height:25vh;
+        width:15%;
+       }
+       #d1{
+        width:20%;
+        height:15vh;
+       }
+       #d27{
+        
+             font-size: 3em;
+             font-weight: bold;
+             display: none;
+             text-align: center;
+       }
+       /* .inp{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+       } */
+       .master{
+        display: flex;
+        justify-content: space-around;
+        justify-items: center;
+        position: absolute;
+        top:30%;
+        width: 100%;
+       }
+       h1{
+        
+        font-size: 3rem;
+        
+       }
+       
+       .master2{
+        display: flex;
+        justify-content: space-around; 
+        width:100% ;
+        position: absolute;
+         top:60%;
+        /* justify-items: center;*/
+       }
+       .inp-div{
+        width: 100%;
+        position: absolute;
+        top:15%;
+        display: flex;
+        justify-content: center;
+       }
+        /* left: 30%;
+       
+       @media screen and(max-width:518px) or (max-height:882px) {
+        h1{
+            font-size: 16px;
+        }
+        
+       }*/
+       #d7,#d21,#d22{
+        width: 15%;
+        height: 15vh;
+       }
+       @media screen and (max-width:362px) and (min-width:358px) {
+        h1{
+            font-size: 35px;
+        }
+       }
+       @media screen and (max-width:375px){
+        h1{
+            font-size: 25px;
+        }
+       }
+    </style>
+</head>
+<body>
+    <h1 align="center">Alphabet Shiksha</h1>
+    <div class="inp-div">
+    <input type="text"  id="i1" placeholder="">
+    
+        <input class="input-btn" type="button"  id="" value="Uppercase" onclick="up()">
+    <input class="input-btn" type="button" value="Enter"  onclick="ch()">
+    <input class="input-btn"type="button"  id="" value="Lowercase" onclick="low()" >
+</div>
+
+</div>
+    <div class="master">
+        <img id="d1" src="apple.png" alt="">
+        <img id="d2" src="ball.png" alt="">
+         <img id="d3" src="cat.png" alt="">
+         <img id="d4" src="dog.png" alt="">
+         <img id="d5" src="elephant.png" alt="">
+         <img id="d6" src="fish.png" alt="">
+         <img id="d7" src="gun.png" alt="">
+         <img id="d8" src="hat.png" alt="">
+         <img id="d9" src="ice_cream.png" alt="">
+         <img id="d10" src="jug.png" alt="">
+         <img id="d11" src="kite.png" alt="">
+         <img id="d12" src="lion.png" alt="">
+         <img id="d13" src="mango.png" alt="">
+         <img id="d14" src="nest.png" alt="">
+         <img id="d15" src="orange.png" alt="">
+         <img id="d16" src="parrot.png" alt="">
+         <img id="d17" src="queen.png" alt="">
+         <img id="d18" src="rabbit.png" alt="">
+         <img id="d19" src="sun.png" alt="">
+         <img id="d20" src="t.png" alt="">
+         <img id="d21" src="umbrella.png" alt="">
+         <img id="d22" src="van.png" alt="">
+         <img id="d23" src="watch.png" alt="">
+         <img id="d24" src="xmas_tree.png" alt="">
+         <img id="d25" src="yak.png" alt="">
+         <img id="d26" src="zebra.png" alt="">
+
+
+    </div>
+<div class="master2"><div id="d27"></div></div>
+<!-- <input type="button" value="ound" > -->
+<audio id="a1" src="a_sound.mp3"></audio>
+<audio id="a2" src="b_sound.mp3"></audio>
+<audio id="a3" src="c_sound.mp3"></audio>
+<audio id="a4" src="d_sound.mp3"></audio>
+<audio id="a5" src="e_sound.mp3"></audio>
+<audio id="a6" src="f_sound.mp3"></audio>
+<audio id="a7" src="g_sound.mp3"></audio>
+<audio id="a8" src="h_sound.mp3"></audio>
+<audio id="a9" src="i_sound.mp3"></audio>
+<audio id="a10" src="j_sound.mp3"></audio>
+<audio id="a11" src="kite.mp3"></audio>
+<audio id="a12" src="l_sound.mp3"></audio>
+<audio id="a13" src="mango.mp3"></audio>
+<audio id="a14" src="n_sound.mp3"></audio>
+<audio id="a15" src="o_sound.mp3"></audio>
+<audio id="a16" src="p_sound.mp3"></audio>
+<audio id="a17" src="q_sound.mp3"></audio>
+<audio id="a18" src="r_sound.mp3"></audio>
+<audio id="a19" src="s_sound.mp3"></audio>
+<audio id="a20" src="t_sound.mp3"></audio>
+<audio id="a21" src="u_sound.mp3"></audio>
+<audio id="a22" src="v_sound.mp3"></audio>
+<audio id="a23" src="w_sound.mp3"></audio>
+<audio id="a24" src="x_sound.mp3"></audio>
+<audio id="a25" src="y_sound.mp3"></audio>
+<audio id="a26" src="zebra.mp3"></audio>
+
+</body>
+<script>
+    
+    function up(){
+       document.getElementById("i1").style.textTransform="uppercase";
+       document.getElementById("d27").style.textTransform = "uppercase";
+
+}
+
+function low(){
+     document.getElementById("i1").style.textTransform="lowercase";
+    document.getElementById("d27").style.textTransform = "lowercase";
+
+}
+function ch(){
+        val=document.getElementById("i1").value;
+        
+        if(val=='a'||val=='A'){
+            document.getElementById('d1').style.display="flex";
+            document.getElementById('d27').innerHTML="apple";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a1').play();
+        }
+        else{
+            document.getElementById('d1').style.display="none";
+
+        }
+        if(val=='b' || val=='B'){
+            document.getElementById('d2').style.display="block";
+            document.getElementById('d27').innerHTML="ball";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a2').play();
+        }
+        else{
+            document.getElementById('d2').style.display="none"
+
+        }
+        if(val=='c' || val=='C'){
+            document.getElementById('d3').style.display="block";
+            document.getElementById('d27').innerHTML="cat";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a3').play();
+        }
+        else{
+            document.getElementById('d3').style.display="none"
+
+        }
+        if(val=='d' || val=='D'){
+            document.getElementById('d4').style.display="block";
+            document.getElementById('d27').innerHTML="dog";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a4').play();
+        }
+        else{
+            document.getElementById('d4').style.display="none"
+
+        }
+        if(val=='e' || val=="E"){
+            document.getElementById('d5').style.display="block";
+            document.getElementById('d27').innerHTML="elephant";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a5').play();
+        }
+        else{
+            document.getElementById('d5').style.display="none"
+
+        }
+        if(val=='f' || val=='F'){
+            document.getElementById('d6').style.display="block";
+            document.getElementById('d27').innerHTML="fish";
+            document.getElementById('a6').play();
+        }
+        else{
+            document.getElementById('d6').style.display="none"
+
+        }
+        if(val=='g'||val=='g'){
+            document.getElementById('d7').style.display="block";
+            document.getElementById('d27').innerHTML="gun";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a7').play();
+        }
+        else{
+            document.getElementById('d7').style.display="none"
+
+        }
+        if(val=='h' || val=='H'){
+            document.getElementById('d8').style.display="block";
+            document.getElementById('d27').innerHTML="hat";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a8').play();
+        }
+        else{
+            document.getElementById('d8').style.display="none"
+
+        }
+        if(val=='i' || val=='I'){
+            document.getElementById('d9').style.display="block";
+            document.getElementById('d27').innerHTML="ice-cream";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a9').play();
+        }
+        else{
+            document.getElementById('d9').style.display="none"
+
+        }
+        if(val=='j' || val=='J'){
+            document.getElementById('d10').style.display="block";
+            document.getElementById('d27').innerHTML="jug";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a10').play();
+        }
+        else{
+            document.getElementById('d10').style.display="none"
+
+        }
+        if(val=='k'|| val=='K'){
+            document.getElementById('d11').style.display="block";
+            document.getElementById('d27').innerHTML="kite";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a11').play();
+        }
+        else{
+            document.getElementById('d11').style.display="none"
+
+        }
+        if(val=='l'||val=='L'){
+            document.getElementById('d12').style.display="block";
+            document.getElementById('d27').innerHTML="lion";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a12').play();
+        }
+        else{
+            document.getElementById('d12').style.display="none"
+
+        }
+        if(val=='m'||val=='M'){
+            document.getElementById('d13').style.display="block";
+            document.getElementById('d27').innerHTML="mango";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a13').play();
+        }
+        else{
+            document.getElementById('d13').style.display="none"
+
+        }
+        if(val=='n'||val=='N'){
+            document.getElementById('d14').style.display="block";
+            document.getElementById('d27').innerHTML="nest";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a14').play();
+        }
+        else{
+            document.getElementById('d14').style.display="none"
+
+        }
+        if(val=='o'||val=='O'){
+            document.getElementById('d15').style.display="block";
+            document.getElementById('d27').innerHTML="orange";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a15').play();
+        }
+        else{
+            document.getElementById('d15').style.display="none"
+
+        }
+        if(val=='p'||val=='P'){
+            document.getElementById('d16').style.display="block";
+            document.getElementById('d27').innerHTML="parrot";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a16').play();
+        }
+        else{
+            document.getElementById('d16').style.display="none"
+
+        }
+        if(val=='q'||val=='Q'){
+            document.getElementById('d17').style.display="block";
+            document.getElementById('d27').innerHTML="queen";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a17').play();
+        }
+        else{
+            document.getElementById('d17').style.display="none"
+
+        }
+        if(val=='r'||val=='R'){
+            document.getElementById('d18').style.display="block";
+            document.getElementById('d27').innerHTML="rabbit";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a18').play();
+        }
+        else{
+            document.getElementById('d18').style.display="none"
+
+        }
+        if(val=='s'||val=='S'){
+            document.getElementById('d19').style.display="block";
+            document.getElementById('d27').innerHTML="sun";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a19').play();
+        }
+        else{
+            document.getElementById('d19').style.display="none"
+
+        }
+        if(val=='t'||val=='T'){
+            document.getElementById('d20').style.display="block";
+            document.getElementById('d27').innerHTML="tiger";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a20').play();
+        }
+        else{
+            document.getElementById('d20').style.display="none"
+
+        }
+        if(val=='u'||val=='U'){
+            document.getElementById('d21').style.display="block";
+            document.getElementById('d27').innerHTML="umbrella";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a21').play();
+        }
+        else{
+            document.getElementById('d21').style.display="none"
+
+        }
+        if(val=='v' ||val=='V'){
+            document.getElementById('d22').style.display="block";
+            document.getElementById('d27').innerHTML="van";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a22').play();
+        }
+        else{
+            document.getElementById('d22').style.display="none"
+
+        }
+        if(val=='w'||val=='W'){
+            document.getElementById('d23').style.display="block";
+            document.getElementById('d27').innerHTML="watch";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a23').play();
+        }
+        else{
+            document.getElementById('d23').style.display="none"
+        }
+        if(val=='x'||val=='X'){
+            document.getElementById('d24').style.display="block";
+            document.getElementById('d27').innerHTML="x-mas tree";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a24').play();
+        }
+        else{
+            document.getElementById('d24').style.display="none"
+
+        }
+        if(val=='y'||val=='Y'){
+            document.getElementById('d25').style.display="block";
+            document.getElementById('d27').innerHTML="yak";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a25').play();
+        }
+        else{
+            document.getElementById('d25').style.display="none"
+
+        }
+        if(val=='z'||val=='Z'){
+            document.getElementById('d26').style.display="block";
+            document.getElementById('d27').innerHTML="zebra";
+            document.getElementById('d27').style.display="block";
+            document.getElementById('a26').play();
+        }
+        else{
+            document.getElementById('d26').style.display="none"
+
+        }
+    }
+</script>
+</html>
